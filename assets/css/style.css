@@ -1,0 +1,128 @@
+/* Toàn bộ trang */
+* {
+  box-sizing: border-box;
+}
+html {
+  /* cài đặt kích thước font chữ */
+  font-size: 62.5%;
+}
+body {
+  /* chọn font chữ */
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+a {
+  /* bỏ gạch chân thẻ a */
+  text-decoration: none;
+}
+.btn {
+  /* nút bấm Đăng Nhập
+   -line-height: đặt chiều cao nút bấm
+   -min-width: đặt chiều rộng nút bấm
+ */
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 24.5px;
+  background: #171100;
+  color: #fff;
+  font-size: 1.64rem;
+  font-weight: 600;
+}
+.main-content {
+  /* kích thước trang web */
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  /* calc bài 85 */
+  max-width: calc(100% - 150px);
+}
+.body-header {
+  /* xoay ngang class  body-header */
+  display: flex;
+  align-items: center;
+  padding: 29px 0 8px;
+}
+
+/* =========================================================== */
+/* header */
+.header {
+  background: #fffcf4;
+}
+.header.fixed {
+  /* giữ nguyên thanh header như cố định trên excel */
+  position: sticky;
+  top: -28px;
+}
+
+.nav {
+  /*  căn phải nav, bài 89.10 */
+  margin-left: auto;
+}
+.nav ul {
+  /* xoay ngang nav */
+  display: flex;
+}
+.nav a {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+  /* position tác động dấu gạch chân theo tổ tiên */
+  position: relative;
+}
+.nav li.active a,
+.nav a:hover {
+  /* chỉ chuột vào thẻ a sẽ đổi màu */
+  /* tác động lên thẻ a có class active thì sẽ đổi màu */
+  color: #171100;
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav li.active a::after {
+  /* tác động dấu gạch chân    position: absolute;*/
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+  display: block;
+}
+.header .btn-sign-up {
+  min-width: 144px;
+}
+.header .action {
+  margin-left: 60px;
+}
+http://127.0.0.1:3000/assets/img/1.jpg
+/* ==============KHỐI HERO ( TRONG KHỐI MAIN)  */ .hero {
+  padding: 56px;
+  background-color: #fffcf4;
+}
+.hero .body {
+  display: flex;
+}
+.hero .media-block {
+  width: 48%;
+  position: relative;
+  /* khối hero sẽ lên trên khối media khi   position: relative;  và absolute */
+}
+
+.hero .content-block {
+  width: 52%;
+}
+.hero .media-block .img {
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.hero .hero-summary {
+  position: absolute;
+  bottom: 48px;
+  right: 0;
+}
