@@ -19,6 +19,14 @@ a {
   /* bỏ gạch chân thẻ a */
   text-decoration: none;
 }
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 127%; /* 126.316% */
+  letter-spacing: -0.76px;
+}
 .btn {
   /* nút bấm Đăng Nhập
    -line-height: đặt chiều cao nút bấm
@@ -253,4 +261,119 @@ a {
 }
 .hero .desc2 strong:nth-child(2) {
   margin-left: 28px;
+}
+/* ============POPULAR =========== */
+/* -----POPULAR trên----- */
+.popular {
+  padding: 65px 0;
+  margin-top: 200px;
+}
+.popular-top {
+  /* cho nó cùng 1 hàng */
+  display: flex;
+  /* kéo dãn kịch sang 2 bên */
+  justify-content: space-between;
+  align-items: center;
+}
+.popular-top .controls {
+  display: flex;
+  gap: 18px;
+}
+.popular-top .desc {
+  width: 458px;
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 167%; /* 166.667% */
+}
+.popular-top .controls-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-radius: 40px;
+  border: 1px solid var(--font-color);
+  color: var(--font-color);
+}
+.popular-top .controls-btn:hover {
+  background-color: var(--font-color);
+  color: #fff;
+  /* tạo hình bàn tay khi di chuột vào */
+  cursor: pointer;
+}
+/* -----POPULAR Dưới------ */
+.popular .popular-bot {
+  margin-top: 55px;
+  gap: 30px;
+  display: flex;
+  /* tạo khoảng cách của 3item */
+}
+.popular .popular-item {
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+}
+.popular .popular-item:hover {
+  border-radius: 12px;
+  border: 1px solid transparent;
+
+  background: #fff;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+.popular .popular-item .thumb {
+  width: 100%;
+  height: 278px;
+  /* objec - ảnh không bị méo */
+  object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.popular .popular-item .info {
+  padding: 16px 22px 22px;
+}
+.popular-item .foot,
+.popular-item .rating,
+.popular-item .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular-bot .title a {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 167%; /* 166.667% */
+}
+.popular-bot .value {
+  margin-left: 6px;
+  color: #fea31b;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 175%; /* 175% */
+}
+.popular .popular-item .desc {
+  margin-top: 6px;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 185%; /* 185.714% */
+}
+.popular-item .foot {
+  margin-top: 12px;
+}
+.popular-item .price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 167%; /* 166.667% */
+}
+.popular .popular-item .btn-book {
+  border: none;
+}
+.popular .popular-item .btn-book:hover {
+  background: var(--font-color);
+  cursor: pointer;
 }
